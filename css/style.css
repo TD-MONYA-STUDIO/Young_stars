@@ -1,19 +1,347 @@
+@font-face {
+    font-family: 'NerkoOne';
+    src: url('../fonts/NerkoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
     background-color: #000;
     margin: 0;
     padding: 0;
 }
+body::-webkit-scrollbar{
+    background-color: #ff009b;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border: #ff009b 1px solid;
+}
+
+
+
+h1,
+p{
+    font-family: 'NerkoOne';
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #000;
+    border-bottom: 5px solid #ff009b;
+    position: fixed;
+    width: 80vw;
+    top: 0;
+    left: 20vw;
+}
+
+
+.burger_and_h1{
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger{
+    width: 40px;
+    height: 30px;
+    display: none;
+    margin: auto 0;
+    position: relative;
+}
+.burger span{
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #ff009b;
+}
+
+.span_1{
+    top: 0;
+}
+.span_2{
+    top: 12px;
+}
+.span_3{
+    top: 25px;
+}
+
+.burger_open .span_1{
+    top: 15px;
+    transform: rotate(45deg);
+}
+.burger_open .span_2{
+    display: none;
+}
+.burger_open .span_3{
+    top: 15px;
+    transform: rotate(-45deg);
+}
+
 
 .h1_in_header{
-    color: #f05a9d;
+    color: #ff009b;
+    padding: 0;
+    margin: auto 0;
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.balance_and_profile_photo_in_header_div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.balance_p_in_header{
+    color: #ff009b;
+    margin: auto 0;
+    padding-right: 50px;
+    font-size: 30px;
+}
+.profile_img_in_header{
+    width: 70px;
+    height: 70px;
 }
 
-p{
+.aside_menu{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    border-right: 5px solid #ff009b;
     color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.logo_div_in_aside_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 5px solid #ff009b;
+}
+.logo_div_in_aside_menu img{
+    width: 50%;
+}
+.profile_button_in_aside_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px;
+    border-bottom: 5px solid #ff009b;
+}
+.profile_button_in_aside_menu img{
+    width: 40%;
+}
+.name_in_profile_button{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.email_in_profile_button{
+    font-size: 20px;
+    margin: 0;
+}
+.name_and_email_div_in_profile_button{
+    padding-right: 30px;
+    padding-left: 10px;
 }
 
-img{
-    width: 200px;
-    height: 200px;
+.normal_buttons_in_aside_menu a{
+    text-decoration: none;
+    color: #00b5b5;
 }
+.normal_buttons_in_aside_menu a:hover div{
+    background-color: #660160;
+}
+.normal_buttons_in_aside_menu div{
+    border-bottom: 5px solid #ff009b;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-right: 30px;
+    font-size: 40px;        
+}
+
+.normal_buttons_in_aside_menu p{
+    margin: 0;
+}
+
+
+.wrapper{
+    padding-left: calc(20vw + 80px);
+    padding-top: 130px;
+    padding-right: 180px;
+    text-align: center;
+}
+
+.who_are_we_text{
+    color: #fff;
+    font-size: 41px;
+}
+.bold_text_span{
+    font-weight: bold;
+}
+.underlined_text_span{
+    text-decoration: underline;
+}
+
+
+.image_in_main_page{
+    width: 45vw;
+    height: 280px;
+}
+
+
+.aside_menu::-webkit-scrollbar{
+    background-color: #ff009b;
+    width: 10px;
+}
+.aside_menu::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border: #ff009b 1px solid;
+}
+
+
+.aside_menu_open{
+    display: block !important;
+    top: 95px;
+    left: 0;
+    width: 30vw;
+    height: calc(100vh - 95px);
+}
+
+
+
+
+@media screen and (max-width: 1340px){
+    .email_in_profile_button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .normal_buttons_in_aside_menu div{
+        font-size: 35px;
+    }
+
+}
+@media screen and (max-width: 1170px){
+    .wrapper{
+        padding-right: 90px;
+    }
+    .who_are_we_text{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .normal_buttons_in_aside_menu div{
+        font-size: 33px;
+    }
+    .name_in_profile_button{
+        font-size: 20px;
+    }
+    .email_in_profile_button{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 930px){
+    .normal_buttons_in_aside_menu div{
+        font-size: 25px;
+    }
+    .image_in_main_page{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 790px){
+    .header{
+        width: 100vw;
+        left: 0;
+    }
+    .aside_menu{
+        display: none;
+    }
+    .header{
+        padding-left: 20px;
+    }
+    .h1_in_header{
+        padding-left: 20px;
+    }
+    .burger{
+        display: block;
+    }
+    .balance_and_profile_photo_in_header_div{
+        padding-right: 40px;
+    }
+    .wrapper{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .who_are_we_text{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .balance_and_profile_photo_in_header_div{
+        display: none;
+    }
+    .header{
+        display: block;
+    }
+    .h1_in_header{
+        padding-right: 40px;
+    }
+    .image_in_main_page{
+        width: 100%;
+    }
+    .aside_menu_open{
+        top: 75px;
+        width: 40vw;
+        height: calc(100vh - 75px);
+    }
+}
+
+@media screen and (max-width: 470px){
+    .who_are_we_text{
+        font-size: 25px;
+    }
+    .aside_menu_open{
+        top: 75px;
+        width: 100vw;
+        height: calc(100vh - 75px);
+    }
+    .logo_div_in_aside_menu img{
+        width: 30%;
+    }
+    .logo_div_in_aside_menu{
+        justify-content: space-around;
+    }
+    .profile_button_in_aside_menu img{
+        width: 30%;
+    }
+    .profile_button_in_aside_menu{
+        justify-content: space-around
+    }
+}
+
+@media screen and (min-width: 792px){
+    .aside_menu_open {
+        display: block !important;
+        top: 0;
+        left: 0;
+        width: 20vw;
+        height: 100vh;
+    }
+}
+
+
 
