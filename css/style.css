@@ -20,6 +20,9 @@ body::-webkit-scrollbar-thumb{
     border: #ff009b 1px solid;
 }
 
+body P{
+    color: #fff;
+}
 
 
 h1,
@@ -158,6 +161,9 @@ p{
     text-decoration: none;
     color: #00b5b5;
 }
+.normal_buttons_in_aside_menu p{
+    color: #00b5b5;
+}
 .normal_buttons_in_aside_menu a:hover div{
     background-color: #660160;
 }
@@ -230,6 +236,55 @@ p{
 }
 
 
+
+.s_g_f_text_in_about_page{
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.s_g_f_text_in_about_page p{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+.sponsor_in_about_page{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.sponsor_in_about_page p{
+    font-size: 40px;
+}
+.sponsor_in_about_page img{
+    width: 200px;
+    margin: 50px;
+}
+
+.sponsor_in_about_page .sponsor_komish_text{
+    font-size: 60px;
+}
+
+.br_in_about_for_adaptive{
+    display: none;
+}
+
+.anonymous_tg_link_in_about{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.anonymous_tg_link_in_about:hover{
+    color: #00b5b5;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1340px){
     .email_in_profile_button{
         font-size: 15px;
@@ -268,6 +323,18 @@ p{
     }
     .image_in_main_page{
         height: 200px;
+    }
+    .s_g_f_text_in_about_page p{
+        font-size: 30px;
+    }
+    .sponsor_in_about_page p{
+        font-size: 30px;
+    }
+    .sponsor_in_about_page .sponsor_komish_text{
+        font-size: 40px;
+    }
+    .sponsor_in_about_page img{
+        width: 150px;
     }
 }
 @media screen and (max-width: 790px){
@@ -351,6 +418,24 @@ p{
         height: 100vh;
     }
 }
+
+
+
+@media screen and (max-width: 550px){
+    .br_in_about_for_adaptive{
+        display: block;
+    }
+    .sponsor_in_about_page{
+        flex-wrap: wrap;
+    }
+    .komish_logo_div_in_sponsor{
+        margin: 0 auto;
+    }
+    .sponsor_in_about_page img{
+        margin: 50px 0;
+    }
+}
+
 
 
 
