@@ -279,6 +279,28 @@ p{
 
 
 
+.div_with_all_photos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    justify-content: start;
+}
+
+.div_with_all_photos img{
+    width: calc(50% - 20px);
+    height: fit-content;
+    margin: 10px;
+}
+
+
+.text_in_photos_page{
+    text-align: left;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+
+
 
 
 
@@ -433,6 +455,23 @@ p{
     }
     .sponsor_in_about_page img{
         margin: 50px 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .text_in_photos_page{
+        font-size: 20px;
+    }
+    .div_with_all_photos{
+        justify-content: center;
+    }
+    .div_with_all_photos img{
+        margin-right: 11px;
+        margin-left: 11px;
+        width: 100%;
     }
 }
 
