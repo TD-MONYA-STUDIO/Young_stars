@@ -40,6 +40,7 @@ p{
     width: 80vw;
     top: 0;
     left: 20vw;
+    z-index: 2;
 }
 
 
@@ -114,6 +115,7 @@ p{
 .aside_menu{
     background-color: #000;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 20vw;
@@ -293,11 +295,54 @@ p{
 }
 
 
-.text_in_photos_page{
+.text_in_photos_page,
+.main_text_in_vid_page{
     text-align: left;
     font-size: 30px;
     padding-left: 10px;
 }
+
+.video_on_video_page{
+    height: auto;
+    width: 400px;
+    margin-right: 50px;
+}
+
+.video_wrapper{
+    text-align: left;
+    padding-bottom: 50px;
+}
+.video_and_desc_div{
+    display: flex;
+    justify-content: start;
+    border-top: #ff009b 1px solid;
+    padding: 10px 0;
+}
+.video_and_desc_div p{
+    margin: 0;
+}
+.video_title{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.video_desc{
+    font-size: 20px;
+}
+.video_date{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+.description_video_text_div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 
 
 
@@ -337,6 +382,23 @@ p{
     }
     .email_in_profile_button{
         font-size: 11px;
+    }
+    .main_text_in_vid_page{
+        font-size: 20px;
+    }
+    .video_title{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .video_desc{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .video_date{
+        font-size: 15px;
+    }
+    .video_and_desc_div{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 930px){
@@ -455,6 +517,10 @@ p{
     }
     .sponsor_in_about_page img{
         margin: 50px 0;
+    }
+    .video_on_video_page{
+        margin: 0;
+        width: 100%;
     }
 }
 
