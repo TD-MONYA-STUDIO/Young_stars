@@ -294,7 +294,7 @@ p{
     margin: 10px;
 }
 
-
+.text_in_games_page,
 .text_in_photos_page,
 .main_text_in_vid_page{
     text-align: left;
@@ -333,12 +333,124 @@ p{
     padding-bottom: 20px;
 }
 
-
-
 .description_video_text_div{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+
+.div_with_all_games{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    justify-content: start;
+}
+
+.back_button_svg{
+    width: 50px;
+    margin-left: -50px;
+}
+
+.game_card{
+    border: #fff 1px solid;
+    padding-top: 20px;
+    width: 250px;
+    margin: 10px;
+    text-decoration: none;
+}
+.game_logo_in_game_card{
+    width: 80%;
+}
+.game_name_in_game_card{
+    font-size: 25px;
+    padding: 0 5px;
+}
+.game_card:hover{
+    background-color: #660160;
+}
+
+
+.game_info_page_wrapper{
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+
+.game_title{
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
+.logo_developer_size_div{
+    display: flex;
+    justify-content: start;
+}
+
+.developer_and_size_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.game_logo{
+    width: 100px;
+    height: 100px;
+}
+.developer_p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.size_p{
+    font-size: 25px;
+    margin: 0;
+}
+.install_p,
+.screenshots_p,
+.description_p,
+.need_help{
+    font-size: 40px;
+}
+.game_is_not_available_to_install_p{
+    font-size: 25px;
+    color: #f00;
+    padding-left: 20px;
+}
+
+.div_with_screenshots{
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.div_with_screenshots img{
+    display: inline-block;
+    min-width: 300px;
+    margin: 0 5px;
+    padding-bottom: 5px;
+}
+
+
+.div_with_screenshots::-webkit-scrollbar{
+    background-color: #ff009b;
+    height: 5px;
+}
+.div_with_screenshots::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border: #ff009b 1px solid;
+}
+.description_text,
+.need_help_text{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.need_help_text a{
+    color: #fff;
+}
+.need_help_text a:hover{
+    color: #ff009b;
 }
 
 
@@ -347,6 +459,26 @@ p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1350px){
+    .game_card{
+        width: 30%;
+    }
+    .game_name_in_game_card{
+        font-size: 20px;
+    }
+}
 
 
 
@@ -370,6 +502,17 @@ p{
         font-size: 35px;
     }
 }
+
+@media screen and (max-width: 1040px){
+    .game_card{
+        width: 25%;
+    }
+    .game_name_in_game_card{
+        font-size: 10px;
+    }
+}
+
+
 
 @media screen and (max-width: 1030px){
     .normal_buttons_in_aside_menu div{
@@ -446,6 +589,10 @@ p{
     .who_are_we_text{
         font-size: 35px;
     }
+    .back_button_svg{
+        width: 50px;
+        margin-left: -25px;
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -465,6 +612,25 @@ p{
         top: 75px;
         width: 40vw;
         height: calc(100vh - 75px);
+    }
+    .back_button_svg{
+        width: 40px;
+    }
+    .game_title{
+        font-size: 30px;
+    }
+    .install_p,
+    .screenshots_p,
+    .description_p,
+    .need_help {
+        font-size: 30px;
+    }
+    .game_is_not_available_to_install_p{
+        font-size: 20px;
+    }
+    .description_text,
+    .need_help_text{
+        font-size: 20px;
     }
 }
 
@@ -526,6 +692,7 @@ p{
 
 
 @media screen and (max-width: 500px){
+    .text_in_games_page,
     .text_in_photos_page{
         font-size: 20px;
     }
@@ -537,8 +704,55 @@ p{
         margin-left: 11px;
         width: 100%;
     }
+    .game_card{
+        width: 40%;
+    }
+    .game_name_in_game_card{
+        font-size: 15px;
+    }
+    .div_with_screenshots img{
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .game_title{
+        font-size: 25px;
+    }
+    .game_logo{
+        height: 80px;
+        width: 80px;
+        margin-top: auto;
+    }
+    .developer_p{
+        font-size: 15px;
+    }
+    .size_p{
+        font-size: 20px;
+    }
+    .install_p,
+    .screenshots_p,
+    .description_p,
+    .need_help {
+        font-size: 25px;
+    }
+    .game_is_not_available_to_install_p{
+        font-size: 15px;
+    }
+    .description_text,
+    .need_help_text{
+        font-size: 15px;
+    }
 }
 
 
+@media screen and (max-width: 319px){
+    .game_card{
+        width: 70%;
+    }
+    .game_name_in_game_card{
+        font-size: 15px;
+    }
+}
 
 
