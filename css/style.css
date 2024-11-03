@@ -425,10 +425,11 @@ p{
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
+.div_with_screenshots video,
 .div_with_screenshots img{
     display: inline-block;
     min-width: 300px;
-    margin: 0 5px;
+    margin: 0 10px;
     padding-bottom: 5px;
 }
 
@@ -710,6 +711,7 @@ p{
     .game_name_in_game_card{
         font-size: 15px;
     }
+    .div_with_screenshots video,
     .div_with_screenshots img{
         min-width: 200px;
     }
