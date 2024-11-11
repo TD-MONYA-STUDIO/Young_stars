@@ -455,6 +455,29 @@ p{
 }
 
 
+.div_with_install_buttons{
+    padding-left: 20px;
+}
+.install_a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.install_a:hover{
+    text-decoration: underline;
+}
+.install_a p{
+    color: #000;
+    margin: 5px;
+    font-size: 20px;
+}
+.install_btn_div{
+    display: flex;
+    background-color: #0F0;
+    justify-content: start;
+    padding: 0 10px;
+    border-radius: 2px;
+}
 
 
 
