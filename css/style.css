@@ -484,6 +484,58 @@ p{
 
 
 
+.div_with_all_photos_authors{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.author_card{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    border: #fff 1px solid;
+    text-decoration: none;
+    text-align: center;
+}
+.author_card:hover{
+    background-color: #660160;
+}
+.author_card_name{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.photos_page_wrapper{
+    text-align: left;
+}
+
+.photos_author_text_on_page{
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -657,7 +709,11 @@ p{
         font-size: 20px;
     }
 }
-
+@media screen and (max-width: 520px){
+    .author_card{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 470px){
     .who_are_we_text{
         font-size: 25px;
@@ -767,6 +823,9 @@ p{
     .description_text,
     .need_help_text{
         font-size: 15px;
+    }
+    .author_card_name{
+        font-size: 20px;
     }
 }
 
