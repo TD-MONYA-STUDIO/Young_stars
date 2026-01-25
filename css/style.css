@@ -297,7 +297,8 @@ p{
 .text_in_games_page,
 .text_in_photos_page,
 .main_text_in_vid_page,
-.text_in_music_page{
+.text_in_music_page,
+.text_in_merch_page{
     text-align: left;
     font-size: 30px;
     padding-left: 10px;
