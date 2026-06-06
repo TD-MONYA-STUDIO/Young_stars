@@ -581,6 +581,54 @@ p{
 }
 
 
+.we_are_on_discord_banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6f49be;
+    text-align: left;
+    border-bottom: 5px solid #fff;
+    width: calc(100vw - 20vw - 60px);
+    transform: translateX(-80px) translateY(-35px);
+    padding: 0 30px;
+}
+.we_are_on_discord_banner p{
+    font-size: 25px;
+    color: #000;
+    margin: 0;
+    padding: 5px 0;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+.we_are_on_discord_banner a:hover{
+    background-color: #aaa;
+}
+.we_are_on_discord_banner a{
+    font-family: 'NerkoOne';
+    font-size: 25px;
+    color: #000;
+    margin: 0;
+    padding: 5px 40px;
+    margin: 5px 0;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-wrap: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -629,6 +677,9 @@ p{
     }
     .panel_with_music p{
         font-size: 15px;
+    }
+    .we_are_on_discord_banner a{
+        padding: 17px 40px;
     }
 }
 
@@ -741,6 +792,10 @@ p{
         width: 50px;
         margin-left: -25px;
     }
+    .we_are_on_discord_banner{
+        width: calc(100vw - 60px);
+        transform: translateX(-50px) translateY(-35px);
+}
 }
 
 @media screen and (max-width: 640px){
@@ -779,6 +834,16 @@ p{
     .description_text,
     .need_help_text{
         font-size: 20px;
+    }
+    .we_are_on_discord_banner{
+        width: calc(100vw - 60px);
+        transform: translateX(-50px) translateY(-56px);
+        flex-wrap: wrap;
+    }
+    .we_are_on_discord_banner a{
+        text-align: center;
+        width: 100%;
+        padding: 5px 40px;
     }
 }
 @media screen and (max-width: 520px){
